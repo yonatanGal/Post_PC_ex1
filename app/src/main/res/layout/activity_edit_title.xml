@@ -31,6 +31,7 @@
         android:background="#9FA8DA" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_start_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/backgroundTopArea"
@@ -38,8 +39,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_edit_24"
         android:layout_marginEnd="16dp"
-        app:backgroundTint="#3D5AFE"
+        app:backgroundTint="@color/blue_a400"
+        tools:visibility="gone"
         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_edit_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/backgroundTopArea"
+        app:layout_constraintBottom_toTopOf="@id/backgroundBottomArea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_done_24"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@color/green_a400"
+        />
+
 
     <TextView
         android:id="@+id/textViewPageTitle"
