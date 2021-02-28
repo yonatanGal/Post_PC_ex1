@@ -56,9 +56,12 @@
         android:textColor="#000"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:visibility="gone"
         />
 
     <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
         android:id="@+id/editTextPageTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -71,8 +74,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:textColor="#1A237E"
-        android:textSize="24sp"
-        android:visibility="gone" />
+        android:textSize="24sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
